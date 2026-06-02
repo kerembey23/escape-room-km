@@ -1,0 +1,188 @@
+/* Algemene styling & Gevangenis Sfeer */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Black', Impact, sans-serif;
+    background-color: #0c0c0c;
+    color: #ffffff;
+}
+
+/* Achtergrondafbeeldingen nabootsen */
+.home-bg, .end-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('../images/prison_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Homepage Centreren (Screenshot 2) */
+.welcome-container {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    padding: 40px;
+    width: 80%;
+    max-width: 500px;
+    margin: 15vh auto;
+    text-align: center;
+    border: 1px solid #333;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.7);
+}
+
+.welcome-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-family: 'Arial', sans-serif;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Top Banner (Screenshot 1) */
+.header-banner {
+    background-color: #000000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ff6600;
+}
+
+.logo {
+    font-size: 1.3rem;
+    color: #fff;
+}
+.logo small {
+    color: #ff6600;
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.team-top {
+    color: #ff6600;
+    font-size: 0.9rem;
+}
+
+/* Eindschermen Win / Verlies Containers */
+.end-container {
+    max-width: 550px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.text-orange { color: #ff6600; }
+.text-red { color: #d9381e; }
+
+.lock-icon {
+    font-size: 2.5rem;
+    margin: 15px 0;
+}
+
+.sub-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.95rem;
+    color: #bbb;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+/* Resultaten Blokken (Grijze kaders) */
+.stats-box {
+    background-color: #141414;
+    border: 1px solid #282828;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+.stat-item .icon {
+    font-size: 1.8rem;
+    margin-right: 15px;
+}
+
+.stat-item div {
+    text-align: left;
+}
+
+.stat-item small {
+    display: block;
+    color: #666;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.stat-item strong {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.win-theme .stat-item strong { color: #ff6600; }
+
+.scoreboard-notice {
+    border-top: 1px solid #282828;
+    padding-top: 15px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+.hint-notice {
+    color: #ff6600;
+}
+
+/* Knoppen */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.btn-primary, .btn-orange {
+    background-color: #ff6600;
+    color: #000;
+    border: none;
+}
+
+.btn-primary:hover, .btn-orange:hover {
+    background-color: #e05500;
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 102, 0, 0.1);
+}

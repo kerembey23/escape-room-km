@@ -1,12 +1,15 @@
 <?php
+// config/dbcon.php
 $server = "localhost"; 
 $username = "root";
 $password = "";
-$db = "escape-room-km";
+$db = "prison_escape"; // Aangepast naar jouw gevangenis database
 
 try {
-  $conn = new PDO("mysql:host=$server;dbname=$db", $username, $password);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  // $pdo gebruikt in plaats van $conn zodat het matcht met de rest van je scripts
+  $pdo = new PDO("mysql:host=$server;dbname=$db", $username, $password);
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
   echo "Verbinding mislukt: " . $e->getMessage();
 }
+?>
